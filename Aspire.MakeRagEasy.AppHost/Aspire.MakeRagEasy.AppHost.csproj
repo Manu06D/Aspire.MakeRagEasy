@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsAspireHost>true</IsAspireHost>
+		<UserSecretsId>e6efe7e2-1c5a-4a5f-b5ef-5c10aa8b0c0a</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Aspire.MakeRagEasy.AiApiService\Aspire.MakeRagEasy.AiApiService.csproj" />
+		<ProjectReference Include="..\Aspire.MakeRagEasy.ApiService\Aspire.MakeRagEasy.ApiService.csproj" />
+		<ProjectReference Include="..\Aspire.MakeRagEasy.Web\Aspire.MakeRagEasy.Web.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+		<PackageReference Include="Aspire.Hosting.NodeJs" Version="8.1.0" />
+	</ItemGroup>
+
+</Project>

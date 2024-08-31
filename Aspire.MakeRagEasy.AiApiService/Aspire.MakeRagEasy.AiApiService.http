@@ -1,0 +1,23 @@
+@Aspire.MakeRagEasy.AiApiService_HostAddress = http://localhost:5298
+
+POST {{Aspire.MakeRagEasy.AiApiService_HostAddress}}/api/generate/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "model": "phi:latest",
+    "prompt": "Generate a brief 3-5 word title for this question, excluding the term 'title.' Then, please reply with only the title: What is the capital of Finland?",
+    "stream": false
+}
+
+
+POST {{Aspire.MakeRagEasy.AiApiService_HostAddress}}/api/generate/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "model": "phi:latest",
+    "prompt": "Generate a brief 3-5 word title for this question, excluding the term 'title.' Then, please reply with only the title: What is the capital of Finland?",
+    "stream": false
+}
+###
